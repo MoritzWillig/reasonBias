@@ -1,0 +1,5 @@
+data_dump - all answers compressed in json format + valid answer counts + invalid answers dump
+data_dump_variants - all answers in csv format
+human_fit / human_grid_fit - measured distances between human and LLM distributions
+human_effect - effect (distribution distance) of switching from CC to CHAIN in human data
+LLM_effect - effect (distribution distance) of switching from CC to CHAIN in LLM data
