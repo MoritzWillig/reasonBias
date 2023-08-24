@@ -1,4 +1,4 @@
-# Causal Reasoning Bias in Humans and LMs
+# Causal Reasoning Bias in Humans and LLMs
 
 
 ## Query data
