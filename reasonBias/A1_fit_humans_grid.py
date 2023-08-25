@@ -29,15 +29,6 @@ causal_type_paths = {
     "chain": Path("./queries/chain_grid_topp_temp_g1/instances/")
 }
 
-datasets = [
-    "cc_annealing",
-    "chain_annealing",
-    #"cc_top_k_var",
-    #"chain_top_k_var",
-    "cc_top_p_var",
-    "chain_top_p_var"
-]
-
 skipped_answers = {}
 
 
