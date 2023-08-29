@@ -6,6 +6,9 @@ from eval_helpers import process_to_percentage_skip_invalid, model_names_from_re
 from excerptor.bundle import Bundle
 from reasonBias.base import get_query_path, get_evaluation_path
 
+# Description: Computes the effect of switching from cc to chain in LLMs
+
+
 datasets = [
     "annealing", #cc_ann, chain_ann
     #"top_k_var",

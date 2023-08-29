@@ -13,6 +13,7 @@ conditions = [
     "top_p_var",
 ]
 
+# Description computes the distance between LLM and human answers - averaged over conditions
 # Note: Run A1_fit_humans first
 
 
