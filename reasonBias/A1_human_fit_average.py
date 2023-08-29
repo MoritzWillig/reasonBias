@@ -5,7 +5,7 @@ import pandas
 from eval_helpers import distribution_distance_names
 from reasonBias.base import get_evaluation_path
 
-datasets = ["cc", "chain"]
+datasets = ["cc", "chain", "control"]
 
 conditions = [
     "annealing",

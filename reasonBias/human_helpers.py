@@ -5,24 +5,18 @@ human_labels = ("Duration (in seconds),RecordedDate,Prolific ID,Investment_Chain
 
 query_variants = ["alien", "econ", "sex"]
 
-dataset_query_combinations = [
-    "chain_econ",
-    "chain_sex",
-    "chain_alien",
-    "cc_sex",
-    "cc_econ",
-    "cc_alien",
-]
-
 human_col_mapping = {
+    "control_sex": "Sex_ControlG",
+    "control_econ": "Investment_ControlG",
+    "control_alien": "Alien_ControlG",
     "chain_econ": "Investment_Chain",
     "chain_sex": "Sex_Chain",
     "chain_alien": "Alien_Chain",
     "cc_sex": "Sex_CCG",
     "cc_econ": "Investment_CCG",
     "cc_alien": "Alien_CCG",
-    "ccp_sex": "Sex_CCP", # FIXME these do not exists yet
-    "ccp_econ": "Investment_CCP",
-    "ccp_alien": "Alien_CCP"
-    # "Investment_ControlP","Alien_ControlP", "Sex_ControlP","Alien_ControlG","Sex_ControlG","Investment_ControlG"
+    #"ccp_sex": "Sex_CCP", # FIXME these do not exists yet
+    #"ccp_econ": "Investment_CCP",
+    #"ccp_alien": "Alien_CCP"
+    # "Investment_ControlP","Alien_ControlP", "Sex_ControlP"
 }

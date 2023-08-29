@@ -8,13 +8,18 @@ from excerptor.bundle import Bundle
 from reasonBias.base import get_query_path, get_evaluation_path, get_human_path
 from reasonBias.human_helpers import human_labels, human_col_mapping
 
+# Description computes the distance between LLM and human answers.
+
 datasets = [
     "cc_annealing",
     "chain_annealing",
+    "control_annealing",
     #"cc_top_k_var",
     #"chain_top_k_var",
+    #"control_top_k_var",
     "cc_top_p_var",
-    "chain_top_p_var"
+    "chain_top_p_var",
+    "control_top_p_var",
 ]
 
 none_converter_int = lambda x: -1
@@ -114,8 +119,6 @@ def main():
                         data_dump["condition_query_name"].extend([query_name] * len(parameter_values))
                         data_dump["condition_cond"].extend([parts[1]] * len(parameter_values))
                         data_dump["parameter_value"].extend(parameter_values)
-
-
                     else:
                         pass
                         # FIXME check all parameter_values are equal (org_parameter_values == parameter_values)

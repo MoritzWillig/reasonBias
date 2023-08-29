@@ -5,14 +5,8 @@ from eval_helpers import compute_distribution_distance, distribution_distance_na
 from reasonBias.base import get_evaluation_path, get_human_path
 from reasonBias.human_helpers import human_labels, human_col_mapping, query_variants
 
-datasets = [
-    "cc_annealing",
-    "chain_annealing",
-    #"cc_top_k_var",
-    #"chain_top_k_var",
-    "cc_top_p_var",
-    "chain_top_p_var"
-]
+# Description: Computes the effect of switching from CC to Chain in humans.
+
 
 none_converter_int = lambda x: -1
 none_converter_str = lambda x: ""
